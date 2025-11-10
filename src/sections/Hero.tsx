@@ -13,7 +13,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Hola, soy <span className="text-pink-300">Micaela</span> 💫
+        Hola, soy <span className="text-pink-300">Micaela Zuzulich</span> 💫
       </motion.h1>
 
       {/* Subtítulo animado */}
