@@ -8,7 +8,9 @@ const Navbar = () => {
     { name: "Inicio", href: "#hero" },
     { name: "Sobre mí", href: "#about" },
     { name: "Proyectos", href: "#projects" },
+    { name: "Trayectoria", href: "#experience" },
     { name: "Contacto", href: "#contact" },
+    
   ];
 
   return (
