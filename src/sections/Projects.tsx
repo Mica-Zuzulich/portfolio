@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Rizzi Inversiones 💼",
     description:
-      "Sitio web moderno para empresa inmobiliaria, con secciones dinámicas y diseño responsive.",
+      "Sitio web moderno para empresa inmobiliaria, con secciones dinámicas y diseño responsive en progreso.",
     tech: ["react", "tailwind", "php"],
     image: rizziImg,
     link: "https://fusion-rizzi.vercel.app/",
