@@ -34,7 +34,7 @@ const projects = [
       "Sitio web moderno para empresa inmobiliaria, con secciones dinámicas y diseño responsive.",
     tech: ["react", "tailwind", "php"],
     image: rizziImg,
-    link: "https://fusion-rizzi-mg8o6roqt-micaela-s-projects-63bc206f.vercel.app/",
+    link: "https://fusion-rizzi.vercel.app/",
   },
   {
     title: "GasGo 🚚",
