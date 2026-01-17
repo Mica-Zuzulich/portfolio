@@ -4,6 +4,7 @@ import { SiTailwindcss, SiPhp, SiPostgresql, SiReact } from "react-icons/si";
 
 import chatImg from "../assets/chat-bot-preview.png";
 import rizziImg from "../assets/rizzi-preview.png";
+import rizziSubirImg from "../assets/rizzi-pag.png";
 import gasgoImg from "../assets/gasgo-preview.png";
 
 const iconMap: any = {
@@ -20,6 +21,24 @@ const iconMap: any = {
 
 const projects = [
   {
+    title: "Rizzi Inversiones 💼",
+    description:
+      "Sitio web moderno para empresa inmobiliaria, con secciones dinámicas y diseño responsive.",
+    tech: ["react", "tailwind", "php"],
+    image: rizziImg,
+    link: "https://fusion-rizzi.vercel.app/",
+    code: "https://github.com/mica-zuzulich/fusion-rizzi",
+  },
+  {
+    title: "Rizzi - Segunda Página 🏢",
+    description:
+      "Segunda página para la misma empresa, con información complementaria y estilo coherente.",
+    tech: ["html", "css", "php"],
+    image: rizziSubirImg,
+    link: "https://rizzi-subir.vercel.app/",
+    code: "https://github.com/Mica-Zuzulich/rizzi-subir",
+  },
+  {
     title: "Chat de Mica 🤖",
     description:
       "Asistente virtual con IA desarrollado con JavaScript, HTML5 y CSS3. Soporta 5 idiomas, integra Groq API (Llama 3.1) y modo claro/oscuro.",
@@ -29,20 +48,12 @@ const projects = [
     code: "https://github.com/mica-zuzulich/chat-bot",
   },
   {
-    title: "Rizzi Inversiones 💼",
-    description:
-      "Sitio web moderno para empresa inmobiliaria, con secciones dinámicas y diseño responsive en progreso.",
-    tech: ["react", "tailwind", "php"],
-    image: rizziImg,
-    link: "https://fusion-rizzi.vercel.app/",
-  },
-  {
     title: "GasGo 🚚",
     description:
       "App móvil con React Native para gestionar pedidos, rutas y entregas en tiempo real.",
     tech: ["rn", "node", "pg"],
     image: gasgoImg,
-    link: "/gasgo",
+    link: "/gasgo", 
   },
 ];
 
@@ -72,7 +83,6 @@ const Projects = () => {
             transition={{ duration: 0.8, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            {/* Imagen con animación */}
             <motion.img
               src={project.image}
               alt={project.title}
@@ -81,13 +91,11 @@ const Projects = () => {
               transition={{ duration: 0.4 }}
             />
 
-            {/* Contenido */}
             <div className="p-6 flex flex-col h-52 justify-between">
               <div>
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-gray-600 text-sm mb-3">{project.description}</p>
 
-                {/* Iconos de tecnologías */}
                 <div className="flex gap-2 mt-2">
                   {project.tech.map((t) => (
                     <span key={t}>{iconMap[t]}</span>
@@ -95,7 +103,6 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Botones */}
               <div className="flex justify-between mt-4">
                 <a
                   href={project.link}
